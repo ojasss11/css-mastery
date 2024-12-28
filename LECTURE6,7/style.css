@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tags {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.tags span:hover {
+  background-color: #0c0a09;
+  color: #fafaf9;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.one,
+.two {
+  border: 8px solid darkblue; /* Different border colors can stay */
+  background-color: aqua; /* Different background colors for .two */
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.one:hover,
+.two:hover {
+  background-color: #0c0a09;
+  color: #fafaf9;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual styles for unique looks */
+.one {
+  border-color: darkblue;
+  background-color: aqua;
+}
+
+.two {
+  border-color: blueviolet;
+  background-color: lightskyblue;
+}
+
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  border: 10px solid pink;
+  background-color: #e2e2e0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+}
+
+#image {
+  width: 70%;
+  border-radius: 50%;
+  height: 70%;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
